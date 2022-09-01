@@ -71,7 +71,7 @@ a {
   transition: margin-left 0.5s ease-out;
 }
 .link-arrow:hover::after {
-  margin-left: 15px;
+  margin-left: 12.5px;
 }
 /* 1024 screens */
 @media screen and (min-width: 1024px) {
