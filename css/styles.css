@@ -80,3 +80,30 @@ a {
   }
 }
 /* links end */
+/* badges start*/
+.badge {
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.badge--primary {
+  background: var(--color-primary);
+  color: white;
+}
+.badge--secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+.badge--small {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 1024) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+/* badges end */
