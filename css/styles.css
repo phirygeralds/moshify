@@ -134,4 +134,12 @@ a {
 .list__inline__item::before {
   content: ".";
 }
+@media screen and (min-width 1024) {
+  .list__inline {
+    font-size: 1.5rem;
+  }
+  .list__vertical {
+    font-size: 1.8rem;
+  }
+}
 /* Lists end */
