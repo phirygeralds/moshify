@@ -134,7 +134,7 @@ a {
 .list__inline__item::before {
   content: ".";
 }
-@media screen and (min-width 1024) {
+@media screen and (min-width: 1024) {
   .list__inline {
     font-size: 1.5rem;
   }
@@ -143,3 +143,32 @@ a {
   }
 }
 /* Lists end */
+/* icons start */
+.svg-icon-container {
+  width: 86px;
+  height: 86px;
+  background-color: #f3f9fa;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.svg__icon {
+  width: 50px;
+  height: 50px;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+@media screen and (min-width: 1024) {
+  .svg-icon-container {
+    width: 64px;
+    height: 64px;
+  }
+  .svg__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* icons end */
