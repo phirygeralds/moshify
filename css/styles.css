@@ -1,6 +1,11 @@
 html {
   font-size: 62.5%;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 /* coloring start*/
 :root {
   --color-primary: #2584ff;
@@ -172,3 +177,71 @@ a {
   }
 }
 /* icons end */
+/* buttons start */
+.button {
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 50px;
+  color: white;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.button:hover {
+  scale: 1.02;
+}
+.button:active {
+  scale: 0.99;
+}
+.button--accent {
+  background-color: var(--color-accent);
+}
+.button--primary {
+  background-color: white;
+  border: 2px solid var(--color-headings);
+  color: var(--color-headings);
+  transition: all 0.2s;
+}
+.button--primary:hover {
+  background-color: var(--color-headings);
+  color: white;
+}
+.button--secondary {
+  background-color: var(--color-secondary);
+}
+.button--long {
+  width: 80%;
+}
+
+.button--medium {
+  width: 55%;
+}
+.button--small {
+  width: 25%;
+  padding-top: 12px;
+}
+.button--thick {
+  padding: 20px;
+}
+.button--thin {
+  padding: 15px;
+}
+.search-button-icon {
+  width: 2rem;
+  height: 1rem;
+  fill: white;
+  transform: translateY(-1px) scale(2.5);
+  margin-right: 10px;
+}
+.search-button-inner-wrapper {
+  display: inline-block;
+  margin: 0 10px;
+}
+@media screen and (min-width: 1024) {
+  .button--long {
+    width: 25%;
+  }
+}
+
+/* buttons end */
