@@ -13,6 +13,8 @@ html {
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-inputs: #ccc;
+  --border-radius: 40px;
 }
 /* coloring end */
 
@@ -245,3 +247,44 @@ a {
 }
 
 /* buttons end */
+/* inputs start */
+input {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  border: 0;
+  outline: none;
+  background: none;
+  flex-grow: 1.5;
+  margin: 0 20px;
+  padding: 20px;
+  color: var(--color-headings);
+  overflow: hidden;
+  border: 1px solid var(--color-inputs);
+  border-radius: var(--border-radius);
+}
+::placeholder {
+  color: #dbdae2;
+}
+.search-input-wrapper input {
+  border: none;
+}
+.search-input-wrapper {
+  display: inline-flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 70px;
+  margin: 10px;
+  border-radius: 50px;
+  padding: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 0 20px 15px rgb(238, 238, 238);
+}
+@media screen and (min-width: 1024px) {
+  input {
+    font-size: 1.5rem;
+  }
+}
+/* inputs end */
