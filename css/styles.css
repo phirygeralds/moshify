@@ -6,6 +6,17 @@ html {
 *::after {
   box-sizing: border-box;
 }
+/* Global styles start */
+.inline-block {
+  display: inline-block;
+}
+.text-white {
+  color: white;
+}
+.background-white {
+  background-color: white;
+}
+/* Global styles end */
 /* coloring start*/
 :root {
   --color-primary: #2584ff;
@@ -166,12 +177,15 @@ ul {
   border-radius: 100%;
 }
 
-.svg__icon {
+.icon {
   width: 50px;
   height: 50px;
 }
 .icon--primary {
   fill: var(--color-primary);
+}
+.icon--secondary {
+  fill: var(--color-secondary);
 }
 @media screen and (min-width: 1024px) {
   .svg-icon-container {
@@ -418,3 +432,21 @@ input {
 }
 /* cards typography end */
 /* cards end */
+/* media component start */
+.media {
+  display: flex;
+  margin: 20px;
+}
+.media__image {
+  margin-top: 10px;
+}
+.media__text {
+  margin-left: 10px;
+}
+.media__heading {
+  margin-top: unset;
+}
+.media__body {
+  max-width: 50ch;
+}
+/* media component end */
