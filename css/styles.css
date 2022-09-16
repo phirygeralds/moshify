@@ -16,6 +16,27 @@ html {
 .background-white {
   background-color: white;
 }
+.paragraph-width {
+  max-width: 50ch;
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.zero-margin-top {
+  margin-top: 0;
+}
+.zero-margin-botton {
+  margin-bottom: 0;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
 /* Global styles end */
 /* coloring start*/
 :root {
@@ -450,3 +471,69 @@ input {
   max-width: 50ch;
 }
 /* media component end */
+/* Quotes start */
+.quotes-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: rgba(214, 214, 214, 0.65) 0px 0px 39px -2px;
+}
+.quotes__image {
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.quotes {
+  margin: 40px 30px auto 50px;
+}
+.quotes-footer {
+  margin-top: 20px;
+}
+.quotes-footer-text {
+  margin-left: 10px;
+  font-size: 2.4rem;
+}
+.quotes__body {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-headings);
+  opacity: 80%;
+}
+.quotes__footer-heading {
+  margin-top: 10px;
+  font-weight: 600;
+  margin-bottom: unset;
+}
+.quotes__footer-icon .icon {
+  width: 40px;
+}
+.quotes__footer-caption {
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+  .quotes-container {
+    flex-direction: column;
+    max-width: 90vw;
+    align-items: center;
+    padding: 30px;
+  }
+  .quotes-text {
+    margin: 40px 0;
+  }
+  .quotes__body,
+  .quotes__footer-heading {
+    font-size: 3rem;
+  }
+  .quotes__footer-heading {
+    margin: 0;
+  }
+  .quotes__footer-caption {
+    font-size: 2rem;
+  }
+  .quotes-text {
+    margin-left: 15px;
+  }
+}
+/* Quotes end */
