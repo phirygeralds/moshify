@@ -537,3 +537,50 @@ input {
   }
 }
 /* Quotes end */
+/* grids start */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 767px) {
+  .grid--1x2 {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.grid--1x3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+/* grids end */
+/* callouts start */
+.callout-container {
+  color: white;
+  background-color: var(--color-primary);
+  max-width: 82%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 12px;
+  align-items: center;
+  gap: 30px;
+}
+.callout__text-heading {
+  font-size: 4rem;
+  color: white;
+  text-transform: capitalize;
+  margin: 0;
+}
+.callout__text-body {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.callout-container .button {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .callout-container {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .callout-container .button {
+    max-width: 60%;
+  }
+}
+/* callouts end */
