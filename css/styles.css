@@ -37,6 +37,10 @@ html {
 .absolute {
   position: absolute;
 }
+.parent-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 /* Global styles end */
 /* coloring start*/
 :root {
@@ -619,3 +623,32 @@ input {
   opacity: 100%;
 }
 /* collapsible end */
+/* blocks start */
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+.block--skewed-left,
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+.block-header {
+  text-align: center;
+}
+.block__heading {
+  margin-top: 0;
+}
+.block--dark .block__heading {
+  color: white;
+}
+/* blocks end */
