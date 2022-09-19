@@ -213,7 +213,7 @@ ul {
     width: 64px;
     height: 64px;
   }
-  .svg__icon {
+  .icon {
     width: 40px;
     height: 40px;
   }
@@ -584,3 +584,38 @@ input {
   }
 }
 /* callouts end */
+/* collapsible start */
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.collapsible__heading {
+  font-size: 3rem;
+  margin: 0;
+}
+.collapsible .svg-icon-container {
+  background-color: #393939;
+}
+.collapsible .icon {
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.collapsible--expanded .icon {
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 100%;
+}
+/* collapsible end */
