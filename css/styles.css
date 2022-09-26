@@ -337,7 +337,6 @@ input {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-
   width: 100%;
 }
 .card {
@@ -413,23 +412,26 @@ input {
   position: absolute;
   right: 5%;
   top: -6px;
-  width: 40px;
-  height: 50px;
+  width: 30px;
+  height: 40px;
 }
 @media screen and (min-width: 1024px) {
   .cards-wrapper {
     flex-direction: row;
-    padding: 50px 100px;
   }
   .card {
     margin: 20px 0;
+    transition: scale 0.3s ease-in-out;
+  }
+  .card:hover {
+    scale: 1.02;
   }
   .card:nth-child(2) .card__header {
     padding: 40px 35px;
   }
   .card:nth-child(2) {
     box-shadow: 0 12px 40px 0 #bbbbbbbe;
-    margin: 0 30px;
+    margin: 0 28px;
   }
   .card__heading,
   .card .button {
@@ -783,3 +785,5 @@ input {
   }
 }
 /* domain block end */
+/* plans block start */
+/* plans block end */
