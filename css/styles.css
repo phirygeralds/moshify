@@ -5,6 +5,7 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
+  user-select: none;
 }
 /* Global styles start */
 .inline-block {
@@ -173,15 +174,13 @@ ul {
 }
 .list__inline {
   font-size: 2rem;
-  font-weight: 600;
+  white-space: nowrap;
+  font-weight: 700;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 60%;
   margin: auto;
-}
-.list__inline__item::before {
-  content: ".";
 }
 @media screen and (min-width: 1024px) {
   .list__inline {
@@ -744,3 +743,43 @@ input {
   }
 }
 /* hero unit end */
+/* domain block start */
+.domain-block .block__heading {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.domain-block .search-input-wrapper {
+  display: flex;
+  margin: 3.5rem auto;
+}
+.domain-block .list__inline {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 5rem);
+  gap: 20px 50px;
+  max-width: 60rem;
+  margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  .domain-block .list__inline {
+    max-width: 90%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 5rem;
+    gap: 20px;
+  }
+  .domain-block li:last-child:after {
+    content: "More..";
+    margin-left: 30px;
+  }
+  .domain-block .block__quote {
+    font-size: 1.8rem;
+    width: 65ch;
+    margin: 20px auto 0;
+  }
+  .domain-block .search-input-wrapper {
+    width: 55%;
+  }
+}
+/* domain block end */
