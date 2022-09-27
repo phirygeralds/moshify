@@ -113,7 +113,7 @@ a {
 .link-arrow::after {
   content: "->";
   margin: 5px;
-  transition: margin-left 0.5s ease-out;
+  transition: margin-left 0.3s ease-out;
 }
 .link-arrow:hover::after {
   margin-left: 12.5px;
@@ -787,3 +787,40 @@ input {
 /* domain block end */
 /* plans block start */
 /* plans block end */
+/* block feature start */
+.block-feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+  gap: 50px;
+}
+.block-feature:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.block-feature .media {
+  margin: 20px 0 0;
+}
+.block-feature .media__heading {
+  margin: 20px 0;
+}
+.block-feature .link-arrow {
+  display: block;
+  margin: 20px 0;
+}
+.block-feature img {
+  object-fit: contain;
+}
+@media screen and (max-width: 1023px) {
+  .block-feature,
+  .block-feature:nth-child(odd) {
+    flex-direction: column;
+  }
+  .block-feature .media {
+    margin: 0;
+  }
+  .block-feature .media__text {
+    margin: 0;
+  }
+}
+/* block feature end */
