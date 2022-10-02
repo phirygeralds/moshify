@@ -614,7 +614,7 @@ input {
 }
 .collapsible .icon {
   transform: rotate(0deg);
-  transition: all 0.3s ease;
+  transition: all 0.5s ease-in-out;
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -637,6 +637,7 @@ input {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
+  width: 100%;
 }
 .block--dark {
   background: #000;
@@ -671,6 +672,7 @@ input {
 }
 /* blocks end */
 /* nav bar start*/
+
 .nav {
   background: #000;
   display: flex;
@@ -711,7 +713,7 @@ input {
 .nav__brand {
   transform: translateY(5px);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .nav__toggler {
     display: none;
   }
@@ -858,3 +860,80 @@ input {
   }
 }
 /* block showcase end */
+/* footer block start */
+#footer-block {
+  padding-top: 200px;
+  background-color: #232323;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer .nav {
+  padding: 0;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1.5px solid rgb(66, 66, 66);
+  background-color: inherit;
+}
+.footer .nav__item {
+  border: 0;
+  font-size: 2.4rem;
+  padding: 10px 0;
+}
+.footer .block__heading {
+  margin: 0;
+  font-size: 3rem;
+}
+.footer .icon {
+  color: white;
+  opacity: 100%;
+}
+.footer .nav.collapsible--expanded .nav__toggler {
+  box-shadow: none;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.footer .block-header {
+  margin-top: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .footer-navs {
+    display: flex;
+    gap: 65px;
+  }
+  .footer-navs .nav {
+    border: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer .list {
+    flex-direction: column;
+  }
+
+  .footer .block-header {
+    margin: 0;
+  }
+  .footer .block__quote {
+    font-size: 1.5rem;
+  }
+  .footer-navs .block__heading {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  .footer-navs .nav__item {
+    font-size: 1.5rem;
+  }
+  .footer .nav__item:hover {
+    background: unset;
+  }
+}
+/* footer block end */
