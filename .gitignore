@@ -2,5 +2,4 @@ node_modules/
 .cache/
 package-lock.json/
 .htmlnanorc/
-dist/
 .gitignore/
